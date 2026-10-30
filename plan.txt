@@ -1,0 +1,6 @@
+North - south green 5 sec 500k
+north - south yellow 3 sec 300k
+all red - 1 sec 100k
+east west green 5 sec 500k
+east west yellow 3 sec 300k
+all red 1 sec 100k

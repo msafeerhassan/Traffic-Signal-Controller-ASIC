@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites name="cocotb tests"><testsuite name="test.test" errors="0" failures="1" skipped="0" tests="1" time="3.362" timestamp="2026-10-30T11:39:43.021991+00:00" hostname="MuhammadSafeerHassan"><testcase classname="test.test" name="test_project" time="3.362"><failure message="assert 9 == 12&#10; +  where 9 = int(LogicArray('00001001', Range(7, 'downto', 0)))&#10; +    where LogicArray('00001001', Range(7, 'downto', 0)) = PackedObject(tb.uo_out).value&#10; +      where PackedObject(tb.uo_out) = HierarchyObject(tb with definition tb (at D:\Hardware\ASIC YSWS\ttgf-verilog-template-main\test\tb.v)).uo_out" type="AssertionError">Traceback (most recent call last):
+  File "D:\Hardware\ASIC YSWS\ttgf-verilog-template-main\test\test.py", line 27, in test_project
+    assert int(dut.uo_out.value) == 12
+AssertionError: assert 9 == 12
+ +  where 9 = int(LogicArray('00001001', Range(7, 'downto', 0)))
+ +    where LogicArray('00001001', Range(7, 'downto', 0)) = PackedObject(tb.uo_out).value
+ +      where PackedObject(tb.uo_out) = HierarchyObject(tb with definition tb (at D:\Hardware\ASIC YSWS\ttgf-verilog-template-main\test\tb.v)).uo_out
+</failure><properties><property name="cocotb" value="True" /><property name="random_seed" value="1793360379" /><property name="file" value="D:\Hardware\ASIC YSWS\ttgf-verilog-template-main\test\test.py" /><property name="line" value="6" /><property name="sim_time_unit" value="ns" /><property name="sim_time_start" value="0.0" /><property name="sim_time_stop" value="1000090000.0" /><property name="sim_time_duration" value="1000090000.0" /><property name="sim_time_ratio" value="297485005.5023315" /></properties><system-err>Test failed with COCOTB_RANDOM_SEED=1793360379
+</system-err></testcase></testsuite></testsuites>
