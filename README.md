@@ -18,3 +18,6 @@ You are supposed to have OSS CAD Suite, Python and cocotb and such dependencies 
 2. Open OSS CAD Suite Termial and navigate to this project's root directory.
 3. Run `py run_test.py` to ensure it works perfectly.
 4. Then you can open the generated waveform using GTKWave and analyze it.
+
+### GDS Render:
+<img width="3467" height="1608" alt="gds_render" src="https://github.com/user-attachments/assets/785b071e-26fc-483f-a31e-7f0464e3a81e" />
