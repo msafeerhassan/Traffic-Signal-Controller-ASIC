@@ -1,42 +1,20 @@
-![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg) ![](../../workflows/fpga/badge.svg)
+# Traffic Signal Controller ASIC
 
-# Tiny Tapeout Verilog Project Template
+## Built using Verilog
 
-- [Read the documentation for project](docs/info.md)
+### What, How and Why?
 
-## What is Tiny Tapeout?
+I made this simple Traffic Signal Controller ASIC just to gain experience and knowledge of designing a chip. This basic traffic controller has two general outputs - one time, the North-South Signal is green while East-West is red while the other time, East-West signal is Green and North-South signal is red. Each green signal stays up for 5 seconds, the yellow signal stays up for 3 seconds. For 1 second, the both signals stays red for practical safety.
 
-Tiny Tapeout is an educational project that aims to make it easier and cheaper than ever to get your digital and analog designs manufactured on a real chip.
+### Test Cases
 
-To learn more and get started, visit https://tinytapeout.com.
+The test cases can be run by running the command `py run_test.py` in OSS CAD. The test cases verifies that the signal stays in the expected state for exact expected time - doesn't changes state before or after the expected interval.
 
-## Set up your Verilog project
+### Setup
 
-1. Add your Verilog files to the `src` folder.
-2. Edit the [info.yaml](info.yaml) and update information about your project, paying special attention to the `source_files` and `top_module` properties. If you are upgrading an existing Tiny Tapeout project, check out our [online info.yaml migration tool](https://tinytapeout.github.io/tt-yaml-upgrade-tool/).
-3. Edit [docs/info.md](docs/info.md) and add a description of your project.
-4. Adapt the testbench to your design. See [test/README.md](test/README.md) for more information.
+You are supposed to have OSS CAD Suite, Python and cocotb and such dependencies pre-installed for it's working.
 
-The GitHub action will automatically build the ASIC files using [LibreLane](https://www.zerotoasiccourse.com/terminology/librelane/).
-
-## Enable GitHub actions to build the results page
-
-- [Enabling GitHub Pages](https://tinytapeout.com/faq/#my-github-action-is-failing-on-the-pages-part)
-
-## Resources
-
-- [FAQ](https://tinytapeout.com/faq/)
-- [Digital design lessons](https://tinytapeout.com/digital_design/)
-- [Learn how semiconductors work](https://tinytapeout.com/siliwiz/)
-- [Join the community](https://tinytapeout.com/discord)
-- [Build your design locally](https://www.tinytapeout.com/guides/local-hardening/)
-
-## What next?
-
-- [Submit your design to the next shuttle](https://app.tinytapeout.com/).
-- Edit [this README](README.md) and explain your design, how it works, and how to test it.
-- Share your project on your social network of choice:
-  - LinkedIn [#tinytapeout](https://www.linkedin.com/search/results/content/?keywords=%23tinytapeout) [@TinyTapeout](https://www.linkedin.com/company/100708654/)
-  - Mastodon [#tinytapeout](https://chaos.social/tags/tinytapeout) [@matthewvenn](https://chaos.social/@matthewvenn)
-  - X (formerly Twitter) [#tinytapeout](https://twitter.com/hashtag/tinytapeout) [@tinytapeout](https://twitter.com/tinytapeout)
-  - Bluesky [@tinytapeout.com](https://bsky.app/profile/tinytapeout.com)
+1. Clone this repository.
+2. Open OSS CAD Suite Termial and navigate to this project's root directory.
+3. Run `py run_test.py` to ensure it works perfectly.
+4. Then you can open the generated waveform using GTKWave and analyze it.
